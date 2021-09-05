@@ -1,5 +1,5 @@
-//import api from "../../utils/api";
-import axios from 'axios'
+import api from "../../utils/api";
+//import axios from 'axios'
 import { setError, removeError } from "./error";
 import {
   REGISTER_SUCCESS,
@@ -19,7 +19,7 @@ export const loadUser = () => async (dispatch) => {
   }
 
   try {
-    const res = await axios.get("https://peerbyte.herokuapp.com/user/");
+    const res = await api.get("/user/");
 
     dispatch({
       type: USER_LOADED,
@@ -32,9 +32,8 @@ export const loadUser = () => async (dispatch) => {
 
 // Register User
 export const register = (authData) => async (dispatch) => {
-  console.log("Rgistering users...", authData)
   try {
-    const res = await axios.post("https://peerbyte.herokuapp.com/user/register", authData);
+    const res = await api.post("/user/register", authData);
 
     dispatch({
       type: REGISTER_SUCCESS,
@@ -62,7 +61,7 @@ export const register = (authData) => async (dispatch) => {
 //Sign in with google:
 export const signInWithGoogle = (authData) => async (dispatch) => {
   try {
-    const res = await axios.post("https://peerbyte.herokuapp.com/user/signInWithGoogle", authData);
+    const res = await api.post("/user/signInWithGoogle", authData);
 
     dispatch({
       type: SIGNIN_WITH_GOOGLE,
@@ -85,7 +84,7 @@ export const signInWithGoogle = (authData) => async (dispatch) => {
 // Login User
 export const login = (authData) => async (dispatch) => {
   try {
-    const res = await axios.post("https://peerbyte.herokuapp.com/auth/login", authData);
+    const res = await api.post("/auth/login", authData);
 
     dispatch({
       type: LOGIN_SUCCESS,
