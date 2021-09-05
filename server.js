@@ -59,6 +59,15 @@ app.use(allowCrossDomain);
 
 app.use(router);
 
+const path = require("path");
+
+// // Step 1:
+// app.use(express.static(path.resolve(__dirname, "./connectsync_client/build")));
+// // Step 2:
+// app.get("*", function (request, response) {
+//   response.sendFile(path.resolve(__dirname, "./connectsync_client/build", "index.html"));
+// });
+
 // Socket.io
 const server = http.Server(app);
 const io = socket(server);

@@ -8,10 +8,10 @@ const workplace = require('./routes/api/workplace');
 const auth = require('./routes/api/auth');
 
 //use routes
-router.use('/api/post', post);
-router.use('/api/user', user);
-router.use('/api/auth', auth);
-router.use('/api/workplace', workplace);
+router.use('/post', post);
+router.use('/user', user);
+router.use('/auth', auth);
+router.use('/workplace', workplace);
 
 // for prod
 if (process.env.NODE_ENV == 'production') {

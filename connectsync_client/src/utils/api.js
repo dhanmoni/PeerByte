@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5500/api/",
+  baseURL: "https://peerbyte.herokuapp.com",
   headers: {
     "Content-Type": "application/json",
   },

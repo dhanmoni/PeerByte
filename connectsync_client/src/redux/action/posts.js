@@ -92,7 +92,7 @@ export const addPostWithImage = (postData, workplacesObj) => async (
     };
     const workplaces = JSON.stringify(workplacesObj);
     const res = await axios.post(
-      `http://localhost:5500/api/post/addPostWithImage?workplaces=${workplaces}`,
+      `https://peerbyte.herokuapp.com/post/addPostWithImage?workplaces=${workplaces}`,
       postData,
       config
     );

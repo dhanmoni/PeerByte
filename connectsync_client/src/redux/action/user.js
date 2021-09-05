@@ -35,7 +35,7 @@ export const addProfileImage = (postData) => async (dispatch) => {
     };
 
     const res = await axios.post(
-      "http://localhost:5500/api/user/addProfileImage",
+      "https://peerbyte.herokuapp.com/user/addProfileImage",
       postData,
       config
     );
