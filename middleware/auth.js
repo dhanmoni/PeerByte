@@ -3,8 +3,9 @@ const User = require('../models/User');
 
 module.exports = function (req, res, next) {
   // Get token from header
+  console.log({req})
   const token = req.header('x-auth-token');
-
+  console.log({token})
   // Check if token exists
   if (!token) {
     return res.status(401).json({ msg: 'No token, access denied' });
