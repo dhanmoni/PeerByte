@@ -4,7 +4,7 @@ An open source virtual working environment for professional institutions and org
 
 ## Website
 
-[PeerByte](https://connectsync.herokuapp.com/)
+[PeerByte](https://peerbyte.herokuapp.com)
 
 ## Installation
 
@@ -45,27 +45,24 @@ The project was created using MERN stack. We used **MongoDB**(MongoDB Atlas) as 
 
 ### Landing page
 
-![landing](https://res.cloudinary.com/dmn19/image/upload/v1597032386/Screenshot_148.png)
+![landing](https://res.cloudinary.com/dmn19/image/upload/v1630916577/landingpage.png)
 
-### Create Account
-
-![account](https://res.cloudinary.com/dmn19/image/upload/v1597032385/Screenshot_147.png)
 
 ### Home page
 
-![Home](https://res.cloudinary.com/dmn19/image/upload/v1597032384/Screenshot_149.png)
+![Home](https://res.cloudinary.com/dmn19/image/upload/v1630916557/homephotos.png)
 
 ### Chat tab
 
-![Chat](https://res.cloudinary.com/dmn19/image/upload/v1597072376/Screenshot_161.png)
+![Chat](https://res.cloudinary.com/dmn19/image/upload/v1630916555/messagespage.png)
 
 ### User profile page
 
-![profile](https://res.cloudinary.com/dmn19/image/upload/v1597032385/Screenshot_153.png)
+![profile](https://res.cloudinary.com/dmn19/image/upload/v1630916556/profilepage.png)
 
 ### Search members
 
-![members](https://res.cloudinary.com/dmn19/image/upload/v1597032384/Screenshot_150.png)
+![members](https://res.cloudinary.com/dmn19/image/upload/v1630916715/member.png)
 
 ### Here is a list of features that we are providing:
 
